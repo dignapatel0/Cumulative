@@ -50,7 +50,7 @@ private static string Port { get { return "3306"; } } <br>
 - **Models**: Contains the class definitions for `Teacher`, `Course`, and `Student`, which represent the data objects used in the application. 
   - `Teacher` model represents the details of each teacher, such as their name, hire date, and salary.
   - `Course` model contains course-related information, such as course name, code, start and finish dates, and the teacher assigned.
-  - `Student` model holds details about students, including their student number and enroll date.
+  - `Student` model holds details about students, including their forst name, last name, student number and enroll date.
   
 - **Views**: Displays the UI for listing teachers, courses, students, and showing individual details for each of them.
 
