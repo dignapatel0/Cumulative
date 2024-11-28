@@ -1,0 +1,83 @@
+﻿@model Cumulative.Models.Student
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student details</title>
+    <style>
+        /* Styles for the student profile page */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .student-details-container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .student-details-container h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .student-card {
+            display: inline-block;
+            background-color: #f0f0f5;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: left;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .student-card h2 {
+            color: #444;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .student-card p {
+            font-size: 1.2em;
+            color: #555;
+            margin: 0.5em 0;
+        }
+
+        .student-card p strong {
+            color: #333;
+        }
+
+        .student-card a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+
+        .student-card a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="student-details-container">
+        <h1>Student details</h1>
+        <div class="student-card">
+            <h2>@Model.StudentFName @Model.StudentLName</h2>
+            <p><strong>Student Number:</strong> @Model.StudentNumber</p>
+            <p><strong>Enrollment Date:</strong> @Model.EnrolDate</p>
+            <a href="/StudentPage/List">Back to List</a>
+        </div>
+    </div>
+
+</body>
+</html>
