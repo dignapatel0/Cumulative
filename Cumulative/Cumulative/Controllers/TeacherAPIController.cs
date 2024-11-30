@@ -90,7 +90,6 @@ namespace Cumulative.Controllers
         }
 
 
-
         /// <summary>
         /// Returns a teacher's details based on the provided teacher ID.
         /// </summary>
@@ -109,7 +108,6 @@ namespace Cumulative.Controllers
         public Teacher FindTeacher(int id)
         {
             Teacher SelectedTeacher = SelectedTeacher = new Teacher(); ;
-
 
             // 'using' will close the connection after the code executes
             using (MySqlConnection Connection = _context.AccessDatabase())
