@@ -153,5 +153,91 @@ namespace Cumulative.Controllers
             //Return selected course
             return SelectedCourse;
         }
+
+        /// <summary>
+        /// Adds a new course to the database.
+        /// </summary>
+        /// <param name="CourseData">An object containing the Course's details.</param>
+        /// <example>
+        /// POST: api/Course/AddCourse
+        /// Headers: Content-Type: application/json  
+        /// Request Body:  
+        /// {
+        ///	    "courseCode":"Http5101",
+        ///	    "teacherid":"1",
+        ///	    "startdate":"2018-09-04",
+        ///	    "finishdate":"2018-09-04"
+        ///	    "coursename":"Web application"
+        ///	 }
+        /// Response: 409 (if there's a conflict, e.g., duplicate entry)  
+        /// </example>
+        /// <returns>
+        /// The ID of the newly inserted course if successful, or 0 if the operation fails.
+        /// </returns>
+
+        [HttpPost(template: "AddCourse")]
+        public int AddCourse([FromBody] Course CourseData)
+        {
+            // 'using' will close the connection after the code executes
+            using (MySqlConnection Connection = _context.AccessDatabase())
+            {
+                Connection.Open();
+                //Establish a new command (query) for our database
+                MySqlCommand Command = Connection.CreateCommand();
+
+                Command.CommandText = "INSERT INTO courses (coursecode, teacherid, startdate, finishdate, coursename) values (@coursecode,@teacherid,@startdate,@finishdate,@coursename)";
+                Command.Parameters.AddWithValue("@coursecode", CourseData.CourseCode);
+                Command.Parameters.AddWithValue("@teacherid", CourseData.TeacherId);
+                Command.Parameters.AddWithValue("@startdate", CourseData.StartDate);
+                Command.Parameters.AddWithValue("@finishdate", CourseData.FinishDate);
+                Command.Parameters.AddWithValue("@coursename", CourseData.CourseName);
+
+
+                Command.ExecuteNonQuery();
+
+                return Convert.ToInt32(Command.LastInsertedId);
+
+            }
+            // if failure
+            return 0;
+        }
+
+        /// <summary>
+        /// Deletes a specific Course record from the database. 
+        /// This operation is performed using the primary key associated with the Course record.
+        /// </summary>
+        /// <param name="CourseId"> The unique ID for the Course to be deleted from the database </param>
+        /// <example>
+        /// Example usage of this API endpoint:
+        /// DELETE: api/CourseData/DeleteCourse/11 -> 1
+        /// In this example, the Course with the unique identifier (CourseID) of 11 will be deleted 
+        /// from the database if the record exists.
+        /// </example>
+        /// <returns>
+        /// Returns the number of rows affected by the delete operation.
+        /// </returns>
+
+
+        [HttpDelete(template: "DeleteCourse/{CourseId}")]
+        public int DeleteCourse(int CourseId)
+        {
+            // 'using' will close the connection after the code executes
+            using (MySqlConnection Connection = _context.AccessDatabase())
+            {
+                Connection.Open();
+                //Establish a new command (query) for our database
+                MySqlCommand Command = Connection.CreateCommand();
+
+
+                Command.CommandText = "DELETE FROM courses WHERE courseid=@id";
+                Command.Parameters.AddWithValue("@id", CourseId);
+
+                return Command.ExecuteNonQuery();
+
+            }
+            // if failure
+            return 0;
+        }
+
     }
 }

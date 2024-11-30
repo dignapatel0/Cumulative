@@ -18,8 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\digna\source\repos\Cumulative\Cumulative
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/digna/source/repos/Cumulative/Cumulative/Views/CoursePage/DeleteConfirm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlUGFnZVxEZWxldGVDb25maXJtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/digna/source/repos/Cumulative/Cumulative/Views/CoursePage/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlUGFnZVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/digna/source/repos/Cumulative/Cumulative/Views/CoursePage/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlUGFnZVxOZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/digna/source/repos/Cumulative/Cumulative/Views/CoursePage/Show.cshtml]

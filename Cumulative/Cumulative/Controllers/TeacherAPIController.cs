@@ -183,6 +183,7 @@ namespace Cumulative.Controllers
                 Connection.Open();
                 //Establish a new command (query) for our database
                 MySqlCommand Command = Connection.CreateCommand();
+
                 Command.CommandText = "INSERT INTO teachers (teacherfname, teacherlname, employeenumber, hiredate, salary) values (@teacherfname, @teacherlname, @employeenumber, @hiredate, @salary)";
                 Command.Parameters.AddWithValue("@teacherfname", TeacherData.TeacherFName);
                 Command.Parameters.AddWithValue("@teacherlname", TeacherData.TeacherLName);

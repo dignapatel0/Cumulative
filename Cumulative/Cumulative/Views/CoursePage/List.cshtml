@@ -16,6 +16,26 @@
             color: #2c3e50;
         }
 
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .navigation a {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #2980b9;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .navigation a:hover {
+            background-color: #1c6391;
+        }
+
         .course-table {
             width: 100%;
             margin: 20px auto;
@@ -79,6 +99,11 @@
 <body>
 
     <h1>List of Courses</h1>
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <a href="/CoursePage/New">Add New Course</a>
+    </div>
 
     <table class="course-table">
         <thead>
