@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\digna\\source\\repos\\Cumulative\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|c:\\users\\digna\\source\\repos\\cumulative\\cumulative\\controllers\\courseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|solutionrelative:cumulative\\controllers\\courseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|c:\\users\\digna\\source\\repos\\cumulative\\cumulative\\views\\studentpage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|solutionrelative:cumulative\\views\\studentpage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|c:\\users\\digna\\source\\repos\\cumulative\\cumulative\\views\\coursepage\\deleteconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|solutionrelative:cumulative\\views\\coursepage\\deleteconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|c:\\users\\digna\\source\\repos\\cumulative\\cumulative\\views\\studentpage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|solutionrelative:cumulative\\views\\studentpage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|c:\\users\\digna\\source\\repos\\cumulative\\cumulative\\views\\coursepage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|solutionrelative:cumulative\\views\\coursepage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|c:\\users\\digna\\source\\repos\\cumulative\\cumulative\\views\\studentpage\\deleteconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|solutionrelative:cumulative\\views\\studentpage\\deleteconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|c:\\users\\digna\\source\\repos\\cumulative\\cumulative\\views\\coursepage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|solutionrelative:cumulative\\views\\coursepage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|c:\\users\\digna\\source\\repos\\cumulative\\cumulative\\controllers\\studentapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|solutionrelative:cumulative\\controllers\\studentapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|c:\\users\\digna\\source\\repos\\cumulative\\cumulative\\views\\coursepage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|solutionrelative:cumulative\\views\\coursepage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|c:\\users\\digna\\source\\repos\\cumulative\\cumulative\\controllers\\studentpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|solutionrelative:cumulative\\controllers\\studentpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|c:\\users\\digna\\source\\repos\\cumulative\\cumulative\\views\\teacherpage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|solutionrelative:cumulative\\views\\teacherpage\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|c:\\users\\digna\\source\\repos\\cumulative\\cumulative\\controllers\\teacherpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|solutionrelative:cumulative\\controllers\\teacherpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|c:\\users\\digna\\source\\repos\\cumulative\\cumulative\\controllers\\coursepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|solutionrelative:cumulative\\controllers\\coursepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|c:\\users\\digna\\source\\repos\\cumulative\\cumulative\\controllers\\teacherapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ED59A5A-E476-4D44-BC03-CE5A5F77B136}|Cumulative\\Cumulative.csproj|solutionrelative:cumulative\\controllers\\teacherapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Show.cshtml",
-              "DocumentMoniker": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Views\\TeacherPage\\Show.cshtml",
-              "RelativeDocumentMoniker": "Cumulative\\Views\\TeacherPage\\Show.cshtml",
-              "ToolTip": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Views\\TeacherPage\\Show.cshtml",
-              "RelativeToolTip": "Cumulative\\Views\\TeacherPage\\Show.cshtml",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Views\\StudentPage\\Show.cshtml",
+              "RelativeDocumentMoniker": "Cumulative\\Views\\StudentPage\\Show.cshtml",
+              "ToolTip": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Views\\StudentPage\\Show.cshtml",
+              "RelativeToolTip": "Cumulative\\Views\\StudentPage\\Show.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGQAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-30T05:38:01.455Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Show.cshtml",
-              "DocumentMoniker": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Views\\CoursePage\\Show.cshtml",
-              "RelativeDocumentMoniker": "Cumulative\\Views\\CoursePage\\Show.cshtml",
-              "ToolTip": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Views\\CoursePage\\Show.cshtml",
-              "RelativeToolTip": "Cumulative\\Views\\CoursePage\\Show.cshtml",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAQwG8AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-30T05:29:05.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "List.cshtml",
-              "DocumentMoniker": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Views\\CoursePage\\List.cshtml",
-              "RelativeDocumentMoniker": "Cumulative\\Views\\CoursePage\\List.cshtml",
-              "ToolTip": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Views\\CoursePage\\List.cshtml",
-              "RelativeToolTip": "Cumulative\\Views\\CoursePage\\List.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwGgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-30T05:27:52.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "New.cshtml",
-              "DocumentMoniker": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Views\\CoursePage\\New.cshtml",
-              "RelativeDocumentMoniker": "Cumulative\\Views\\CoursePage\\New.cshtml",
-              "ToolTip": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Views\\CoursePage\\New.cshtml",
-              "RelativeToolTip": "Cumulative\\Views\\CoursePage\\New.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-30T05:21:24.525Z",
+              "WhenOpened": "2024-11-30T06:08:35.719Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DeleteConfirm.cshtml",
-              "DocumentMoniker": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Views\\CoursePage\\DeleteConfirm.cshtml",
-              "RelativeDocumentMoniker": "Cumulative\\Views\\CoursePage\\DeleteConfirm.cshtml",
-              "ToolTip": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Views\\CoursePage\\DeleteConfirm.cshtml",
-              "RelativeToolTip": "Cumulative\\Views\\CoursePage\\DeleteConfirm.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
+              "Title": "New.cshtml",
+              "DocumentMoniker": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Views\\StudentPage\\New.cshtml",
+              "RelativeDocumentMoniker": "Cumulative\\Views\\StudentPage\\New.cshtml",
+              "ToolTip": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Views\\StudentPage\\New.cshtml",
+              "RelativeToolTip": "Cumulative\\Views\\StudentPage\\New.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-30T05:21:14.549Z",
+              "WhenOpened": "2024-11-30T05:58:21.341Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CourseAPIController.cs",
-              "DocumentMoniker": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Controllers\\CourseAPIController.cs",
-              "RelativeDocumentMoniker": "Cumulative\\Controllers\\CourseAPIController.cs",
-              "ToolTip": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Controllers\\CourseAPIController.cs",
-              "RelativeToolTip": "Cumulative\\Controllers\\CourseAPIController.cs",
-              "ViewState": "AgIAAMwAAAAAAAAAAAAQwMcAAAANAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "DeleteConfirm.cshtml",
+              "DocumentMoniker": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Views\\StudentPage\\DeleteConfirm.cshtml",
+              "RelativeDocumentMoniker": "Cumulative\\Views\\StudentPage\\DeleteConfirm.cshtml",
+              "ToolTip": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Views\\StudentPage\\DeleteConfirm.cshtml",
+              "RelativeToolTip": "Cumulative\\Views\\StudentPage\\DeleteConfirm.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T05:57:50.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentAPIController.cs",
+              "DocumentMoniker": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Controllers\\StudentAPIController.cs",
+              "RelativeDocumentMoniker": "Cumulative\\Controllers\\StudentAPIController.cs",
+              "ToolTip": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Controllers\\StudentAPIController.cs",
+              "RelativeToolTip": "Cumulative\\Controllers\\StudentAPIController.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAgwI8AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T04:56:03.561Z",
+              "WhenOpened": "2024-11-30T05:47:46.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CoursePageController.cs",
-              "DocumentMoniker": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Controllers\\CoursePageController.cs",
-              "RelativeDocumentMoniker": "Cumulative\\Controllers\\CoursePageController.cs",
-              "ToolTip": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Controllers\\CoursePageController.cs",
-              "RelativeToolTip": "Cumulative\\Controllers\\CoursePageController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAAAEAAAAAxAAAAAAAAAA==",
+              "Title": "TeacherAPIController.cs",
+              "DocumentMoniker": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Controllers\\TeacherAPIController.cs",
+              "RelativeDocumentMoniker": "Cumulative\\Controllers\\TeacherAPIController.cs",
+              "ToolTip": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Controllers\\TeacherAPIController.cs",
+              "RelativeToolTip": "Cumulative\\Controllers\\TeacherAPIController.cs",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAcwO0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T04:55:52.868Z",
+              "WhenOpened": "2024-11-30T05:47:40.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TeacherPageController.cs",
+              "DocumentMoniker": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Controllers\\TeacherPageController.cs",
+              "RelativeDocumentMoniker": "Cumulative\\Controllers\\TeacherPageController.cs",
+              "ToolTip": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Controllers\\TeacherPageController.cs",
+              "RelativeToolTip": "Cumulative\\Controllers\\TeacherPageController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAAEQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T05:47:39.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentPageController.cs",
+              "DocumentMoniker": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Controllers\\StudentPageController.cs",
+              "RelativeDocumentMoniker": "Cumulative\\Controllers\\StudentPageController.cs",
+              "ToolTip": "C:\\Users\\digna\\source\\repos\\Cumulative\\Cumulative\\Controllers\\StudentPageController.cs",
+              "RelativeToolTip": "Cumulative\\Controllers\\StudentPageController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAA8wDgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T05:47:30.368Z",
               "EditorCaption": ""
             }
           ]

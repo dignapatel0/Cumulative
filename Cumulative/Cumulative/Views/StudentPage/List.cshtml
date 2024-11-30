@@ -16,6 +16,26 @@
             color: #2c3e50;
         }
 
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .navigation a {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #2980b9;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .navigation a:hover {
+            background-color: #1c6391;
+        }
+
         .student-table {
             width: 100%;
             margin: 20px auto;
@@ -79,6 +99,11 @@
 <body>
 
     <h1>List of Students</h1>
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <a href="/StudentPage/New">Add New Student</a>
+    </div>
 
     <table class="student-table">
         <thead>

@@ -65,6 +65,30 @@
         .student-card a:hover {
             background-color: #0056b3;
         }
+
+        /* Styling for delete link */
+        .alert-warning {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            text-decoration: none;
+        }
+
+        .alert-warning:hover {
+            background-color: #e67e22;
+        }
+
+        .links-container {
+            margin-top: 20px;
+        }
+
+        .links-container a {
+            margin: 0 10px;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -75,7 +99,13 @@
             <h2>@Model.StudentFName @Model.StudentLName</h2>
             <p><strong>Student Number:</strong> @Model.StudentNumber</p>
             <p><strong>Enrollment Date:</strong> @Model.EnrolDate</p>
-            <a href="/StudentPage/List">Back to List</a>
+
+            <!-- Action Links -->
+            <div class="links-container">
+                <a href="/StudentPage/List">Back to List</a>
+                <a class="alert-warning" href="/StudentPage/DeleteConfirm/@Model.StudentId">Delete</a>
+            </div>
+
         </div>
     </div>
 
