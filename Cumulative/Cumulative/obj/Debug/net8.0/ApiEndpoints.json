@@ -93,6 +93,58 @@
   },
   {
     "ContainingType": "Cumulative.Controllers.TeacherAPIController",
+    "Method": "AddTeacher",
+    "RelativePath": "api/Teacher/AddTeacher",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TeacherData",
+        "Type": "Cumulative.Models.Teacher",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Cumulative.Controllers.TeacherAPIController",
+    "Method": "DeleteTeacher",
+    "RelativePath": "api/Teacher/DeleteTeacher/{TeacherId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TeacherId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Cumulative.Controllers.TeacherAPIController",
     "Method": "FindTeacher",
     "RelativePath": "api/Teacher/FindTeacher/{id}",
     "HttpMethod": "GET",

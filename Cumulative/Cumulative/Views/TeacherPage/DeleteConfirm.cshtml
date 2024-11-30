@@ -1,0 +1,34 @@
+﻿@model Cumulative.Models.Teacher
+
+
+<div id="containershow" style="max-width: 600px; margin: 0 auto; font-family: Arial, sans-serif;">
+    <!-- Navigation and Buttons -->
+    <nav style="margin-bottom: 20px; text-align: center;">
+        <h2 style="text-align: center; color: #333;">
+            Are you sure you want to delete @Model.TeacherFName @Model.TeacherLName?
+        </h2>
+        <p style="text-align: center; color: #555;">
+            This action cannot be undone.
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+            <!-- Cancel Button -->
+            <a href="/TeacherPage/Show/@Model.TeacherId" 
+               style="background-color: #6c757d; color: white; text-decoration: none; 
+                      padding: 10px 20px; border-radius: 4px; font-size: 16px; 
+                      text-align: center; display: inline-block; width: 200px;">
+                Cancel
+            </a>
+
+            <!-- Confirm Delete Button -->
+            <form method="POST" action="/TeacherPage/Delete/@Model.TeacherId" style="margin: 0;">
+                <button type="submit" 
+                        style="background-color: #d9534f; color: white; border: none; 
+                               padding: 10px 20px; border-radius: 4px; font-size: 16px; 
+                               cursor: pointer; width: 200px;">
+                    Confirm Delete
+                </button>
+            </form>
+        </div>
+    </nav>
+</div>

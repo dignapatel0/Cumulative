@@ -65,20 +65,49 @@
         .teacher-card a:hover {
             background-color: #0056b3;
         }
+
+        /* Styling for delete link */
+        .alert-warning {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            text-decoration: none;
+        }
+
+        .alert-warning:hover {
+            background-color: #e67e22;
+        }
+
+        .links-container {
+            margin-top: 20px;
+        }
+
+        .links-container a {
+            margin: 0 10px;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
 
     <div class="teacher-details-container">
-            <h1>Teacher Profile</h1>
-            <div class="teacher-card">
-                <h2>@Model.TeacherFName @Model.TeacherLName</h2>
-                <p><strong>Employee Number:</strong> @Model.EmployeeNumber</p>
-                <p><strong>Hire Date:</strong> @Model.HireDate.ToString("yyyy-MM-dd")</p>
-                <p><strong>Salary:</strong> $@Model.Salary</p>
+        <h1>Teacher Profile</h1>
+        <div class="teacher-card">
+            <h2>@Model.TeacherFName @Model.TeacherLName</h2>
+            <p><strong>Employee Number:</strong> @Model.EmployeeNumber</p>
+            <p><strong>Hire Date:</strong> @Model.HireDate.ToString("yyyy-MM-dd")</p>
+            <p><strong>Salary:</strong> $@Model.Salary</p>
+
+            <!-- Action Links -->
+            <div class="links-container">
                 <a href="/TeacherPage/List">Back to List</a>
+                <a class="alert-warning" href="/TeacherPage/DeleteConfirm/@Model.TeacherId">Delete</a>
             </div>
         </div>
+    </div>
 
 </body>
 </html>

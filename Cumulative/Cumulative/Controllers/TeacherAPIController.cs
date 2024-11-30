@@ -65,7 +65,7 @@ namespace Cumulative.Controllers
                         string TeacherLName = ResultSet["teacherlname"].ToString();
                         string EmployeeNumber = ResultSet["employeenumber"].ToString();
                         DateTime HireDate = Convert.ToDateTime(ResultSet["hiredate"]);
-                        double Salary = Convert.ToDouble(ResultSet["salary"]);
+                        decimal Salary = Convert.ToDecimal(ResultSet["salary"]);
 
                         //short form for setting all properties while creating the object
                         Teacher TeachersInfo = new Teacher()
@@ -137,7 +137,7 @@ namespace Cumulative.Controllers
                         string TeacherLName = ResultSet["teacherlname"].ToString();
                         string EmployeeNumber = ResultSet["employeenumber"].ToString();
                         DateTime HireDate = Convert.ToDateTime(ResultSet["hiredate"]);
-                        double Salary = Convert.ToDouble(ResultSet["salary"]);
+                        decimal Salary = Convert.ToDecimal(ResultSet["salary"]);
 
                         SelectedTeacher.TeacherId = TeacherId;
                         SelectedTeacher.TeacherFName = TeacherFName;
@@ -153,5 +153,87 @@ namespace Cumulative.Controllers
             return SelectedTeacher;
         }
 
+        /// <summary>
+        /// Adds a new teacher to the database.
+        /// </summary>
+        /// <param name="TeacherData">An object containing the teacher's details.</param>
+        /// <example>
+        /// POST: api/Teacher/AddTeacher  
+        /// Headers: Content-Type: application/json  
+        /// Request Body:  
+        /// { 
+        ///     "teacherFName": "Maria",
+        ///     "teacherLName": "Monte",
+        ///     "employeeNumber": "T101",
+        ///     "hireDate": "2024-11-28T00:00:00",
+        ///     "salary": 40.5"
+        /// }  
+        /// Response: 409 (if there's a conflict, e.g., duplicate entry)  
+        /// </example>
+        /// <returns>
+        /// The ID of the newly inserted teacher if successful, or 0 if the operation fails.
+        /// </returns>
+
+        [HttpPost(template: "AddTeacher")]
+        public int AddTeacher([FromBody] Teacher TeacherData)
+        {
+            // 'using' will close the connection after the code executes
+            using (MySqlConnection Connection = _context.AccessDatabase())
+            {
+                Connection.Open();
+                //Establish a new command (query) for our database
+                MySqlCommand Command = Connection.CreateCommand();
+                Command.CommandText = "INSERT INTO teachers (teacherfname, teacherlname, employeenumber, hiredate, salary) values (@teacherfname, @teacherlname, @employeenumber, @hiredate, @salary)";
+                Command.Parameters.AddWithValue("@teacherfname", TeacherData.TeacherFName);
+                Command.Parameters.AddWithValue("@teacherlname", TeacherData.TeacherLName);
+                Command.Parameters.AddWithValue("@employeenumber", TeacherData.EmployeeNumber);
+                Command.Parameters.AddWithValue("@hiredate", TeacherData.HireDate);
+                Command.Parameters.AddWithValue("@salary", TeacherData.Salary);
+
+                Command.ExecuteNonQuery();
+
+                return Convert.ToInt32(Command.LastInsertedId);
+
+            }
+            // if failure
+            return 0;
+        }
+
+        /// <summary>
+        /// Deletes a specific teacher record from the database. 
+        /// This operation is performed using the primary key associated with the teacher record.
+        /// </summary>
+        /// <param name="TeacherId"> The unique ID for the teacher to be deleted from the database </param>
+        /// <example>
+        /// Example usage of this API endpoint:
+        /// DELETE: api/TeacherData/DeleteTeacher/11 -> 1
+        /// In this example, the teacher with the unique identifier (TeacherID) of 11 will be deleted 
+        /// from the database if the record exists.
+        /// </example>
+        /// <returns>
+        /// Returns the number of rows affected by the delete operation.
+        /// </returns>
+
+
+        [HttpDelete(template: "DeleteTeacher/{TeacherId}")]
+        public int DeleteTeacher(int TeacherId)
+        {
+            // 'using' will close the connection after the code executes
+            using (MySqlConnection Connection = _context.AccessDatabase())
+            {
+                Connection.Open();
+                //Establish a new command (query) for our database
+                MySqlCommand Command = Connection.CreateCommand();
+
+
+                Command.CommandText = "DELETE FROM teachers WHERE teacherid=@id";
+                Command.Parameters.AddWithValue("@id", TeacherId);
+
+                return Command.ExecuteNonQuery();
+
+            }
+            // if failure
+            return 0;
+        }
     }
 }

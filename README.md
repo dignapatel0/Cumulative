@@ -1,4 +1,4 @@
-# School Application
+# School Database - CRUD Operations for Teachers, Courses, and Students
 
 ## Description
 School Application is a web application designed to manage and display information about teachers, courses, and students in a school system. It provides a simple interface for viewing and managing teacher details, course details, and student information.

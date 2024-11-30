@@ -20,6 +20,6 @@
         public DateTime HireDate { get; set; }
 
         //Teacher salary
-        public double Salary { get; set; }
+        public decimal Salary { get; set; }
     }
 }
