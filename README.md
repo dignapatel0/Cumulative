@@ -12,6 +12,17 @@ The application is built using ASP.NET Core MVC and MySQL, enabling efficient CR
 - **Responsive Design**: Mobile-friendly interface to ensure accessibility across all devices.
 - **CRUD Operations**: Supports basic Create, Read, Update, and Delete operations for managing teachers, courses, and students.
 
+## Testing and Validation
+The project includes comprehensive testing to ensure each CRUD operation works correctly, with cURL commands and web page interaction screenshots as evidence. The testing covers:
+
+- **_Adding Records_**: Validation of data input and correct database insertion.
+- **_Reading Records_**: Verification of accurate retrieval and display of teacher, student, and course data from the database.
+- **_Updating Records_**: Verification of accurate update of teacher, student, and course data in the database.
+- **_Deleting Records_**: Proper deletion confirmation and handling non-existent records.
+
+## Usability
+This project is designed for educational institutions or developers interested in managing academic data using ASP.NET Core. It provides a learning tool for developers and students to understand core concepts in web development, database interaction, and object-oriented programming.
+
 ## Technologies Used
 - **ASP.NET Core MVC**: For building the web application using the MVC architecture.
 - **MySQL**: For storing and managing data related to teachers, courses, and students.
