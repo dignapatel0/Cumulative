@@ -6,22 +6,15 @@ School Application is a web application designed to manage and display informati
 The application is built using ASP.NET Core MVC and MySQL, enabling efficient CRUD operations (Create, Read, Update, Delete) across all three tables: Teachers, Courses, and Students.
 
 ## Features
-- **Teacher Information**: Each course has associated teacher details, including their name, hire date, and assigned courses.
-- **Course Management**: Displays a list of all courses with details such as course name, code, start date, end date, and assigned teachers.
-- **Student Information**: Provides details like student name, student number, enrollment date, and the courses they are enrolled in.
-- **Responsive Design**: Mobile-friendly interface to ensure accessibility across all devices.
-- **CRUD Operations**: Supports basic Create, Read, Update, and Delete operations for managing teachers, courses, and students.
-
-## Testing and Validation
-The project includes comprehensive testing to ensure each CRUD operation works correctly, with cURL commands and web page interaction screenshots as evidence. The testing covers:
-
-- **_Adding Records_**: Validation of data input and correct database insertion.
-- **_Reading Records_**: Verification of accurate retrieval and display of teacher, student, and course data from the database.
-- **_Updating Records_**: Verification of accurate update of teacher, student, and course data in the database.
-- **_Deleting Records_**: Proper deletion confirmation and handling non-existent records.
-
-## Usability
-This project is designed for educational institutions or developers interested in managing academic data using ASP.NET Core. It provides a learning tool for developers and students to understand core concepts in web development, database interaction, and object-oriented programming.
+- **Teacher Management**: View, add, edit, and delete teacher details such as name, hire date, and assigned courses.
+- **Course Management**: Manage courses with details like course name, code, start date, end date, and assigned teachers.
+- **Student Management**: Handle student records, including name, student number, enrollment date, and enrolled courses.
+- **CRUD Operations**: 
+  - **Create**: Add new records to the database.
+  - **Read**: Display and search for existing records.
+  - **Update**: Modify existing data.
+  - **Delete**: Remove records from the database.
+- **Responsive Design**: Ensures accessibility across devices.
 
 ## Technologies Used
 - **ASP.NET Core MVC**: For building the web application using the MVC architecture.
@@ -38,31 +31,63 @@ This project is designed for educational institutions or developers interested i
   - MySQL Workbench or any SQL client for database management
 - **Browser**: Latest versions of Chrome, Firefox, Safari, or Edge
 
-## Git Repo
-git clone https://github.com/dignapatel0/Cumulative.git
 
+## Application Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/dignapatel0/Cumulative.git
+   ```
 
-## Set Up MySQL Database
-Create a MySQL database named schooldb (or use your preferred name).
+2. Set up the MySQL database:
+   - Create a database named `schooldb` (or your preferred name).
 
-## Update the connection string in SchoolDbContext.cs with your database credentials:
+3. Update the connection string in `SchoolDbContext.cs` with your database credentials:
+   ```csharp
+   private static string User { get { return "root"; } }
+   private static string Password { get { return ""; } }
+   private static string Database { get { return "schooldb"; } }
+   private static string Server { get { return "localhost"; } }
+   private static string Port { get { return "3306"; } }
+   ```
 
-private static string User { get { return "root"; } } <br>
-private static string Password { get { return ""; } } <br>
-private static string Database { get { return "schooldb"; } } <br>
-private static string Server { get { return "localhost"; } } <br>
-private static string Port { get { return "3306"; } } <br>
+4. Run the application using Visual Studio or Visual Studio Code.
 
+## Project Structure
 
-## Application Structure
+### Controllers
+- Handles the logic for CRUD operations.
+  - `TeacherPageController`
+  - `CourseAPIController`
+  - `StudentPageController`
 
-- **Controllers**: Contains the logic for handling requests related to teachers, courses, and students. For example, `TeacherPageController`, `CourseAPIController`, and `StudentPageController`.
-  
-- **Models**: Contains the class definitions for `Teacher`, `Course`, and `Student`, which represent the data objects used in the application. 
-  - `Teacher` model represents the details of each teacher, such as their name, hire date, and salary.
-  - `Course` model contains course-related information, such as course name, code, start and finish dates, and the teacher assigned.
-  - `Student` model holds details about students, including their forst name, last name, student number and enroll date.
-  
-- **Views**: Displays the UI for listing teachers, courses, students, and showing individual details for each of them.
+### Models
+- Represents data entities:
+  - `Teacher`: Contains details like name, hire date, and courses.
+  - `Course`: Holds course-related data such as name, code, and dates.
+  - `Student`: Includes student information such as name, enrollment date, and courses.
 
-- **Database Context**: `SchoolDbContext.cs` is responsible for handling MySQL database connections and executing queries. It manages the interaction between the application and the database, including the tables for teachers, courses, and students.
+### Views
+- Provides the user interface for:
+  - Listing teachers, courses, and students.
+  - Showing individual details.
+  - Forms for adding or editing data.
+
+### Database Context
+- `SchoolDbContext.cs`: Manages database connections and query execution for teachers, courses, and students.
+
+## How to Use
+1. **Teachers**:
+   - View all teachers.
+   - Add a new teacher.
+   - Edit teacher details.
+   - Delete a teacher.
+
+2. **Courses**:
+   - View the list of courses.
+   - Add, update, or delete course records.
+
+3. **Students**:
+   - List all students.
+   - Add or edit student details.
+   - Remove a student record.
+
