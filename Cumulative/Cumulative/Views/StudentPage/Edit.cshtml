@@ -1,0 +1,187 @@
+﻿@model Cumulative.Models.Student
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #containershow {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        .navlink {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+
+        .navlink:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .inputrow {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="datetime"],
+        input[type="number"] {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="datetime"]:focus,{
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+            transform: scale(1.02);
+        }
+
+        input[type="submit"]:active {
+            background-color: #1e7e34;
+        }
+
+        /* Error highlight styles */
+        input.error {
+            background-color: #ffe6e6;
+            border-color: #ff0000;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="containershow">
+        <nav>
+            <a class="navlink" href="/StudentPage/Show/@Model.StudentId">Back</a>
+        </nav>
+        <h2>Edit Student</h2>
+        <form name="updateform" method="POST" action="/StudentPage/Update/@Model.StudentId">
+            <div class="inputrow">
+                <label for="StudentFName">First Name:</label>
+                <input type="text" id="StudentFName" name="StudentFName" value="@Model.StudentFName" />
+                <span id="error-fname" class="error-message hidden">First Name is required.</span>
+            </div>
+            <div class="inputrow">
+                <label for="StudentLName">Last Name:</label>
+                <input type="text" id="StudentLName" name="StudentLName" value="@Model.StudentLName" />
+                <span id="error-lname" class="error-message hidden">Last Name is required.</span>
+            </div>
+            <div class="inputrow">
+                <label for="StudentNumber">Employee Number:</label>
+                <input type="text" id="StudentNumber" name="StudentNumber" value="@Model.StudentNumber" />
+            </div>
+            <div class="inputrow">
+                <label for="EnrolDate">Enrol Date:</label>
+                <input type="text" id="EnrolDate" name="EnrolDate" value="@Model.EnrolDate" />
+            </div>
+            <div class="inputrow">
+                <input type="submit" value="Update Student" />
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Validate form inputs
+        const formHandle = document.forms.updateform;
+
+        const firstName = formHandle.StudentFName;
+        const lastName = formHandle.StudentLName;
+
+        const errorFname = document.getElementById("error-fname");
+        const errorLname = document.getElementById("error-lname");
+
+        formHandle.onsubmit = function () {
+            let valid = true;
+
+            if (firstName.value.trim() === "") {
+                firstName.classList.add("error");
+                errorFname.classList.remove("hidden");
+                valid = false;
+            } else {
+                firstName.classList.remove("error");
+                errorFname.classList.add("hidden");
+            }
+
+            if (lastName.value.trim() === "") {
+                lastName.classList.add("error");
+                errorLname.classList.remove("hidden");
+                valid = false;
+            } else {
+                lastName.classList.remove("error");
+                errorLname.classList.add("hidden");
+            }
+
+            return valid;
+        };
+    </script>
+</body>
+</html>

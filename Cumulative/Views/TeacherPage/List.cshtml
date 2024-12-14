@@ -1,0 +1,160 @@
+﻿@model IEnumerable<Cumulative.Models.Teacher>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Teachers</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .navigation a {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #2980b9;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .navigation a:hover {
+            background-color: #1c6391;
+        }
+
+        .teacher-table {
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        .teacher-table th, .teacher-table td {
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            text-align: left;
+        }
+
+        .teacher-table th {
+            background-color: #34495e;
+            color: white;
+        }
+
+        .teacher-link {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .teacher-link:hover {
+            text-decoration: underline;
+        }
+
+        .form-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .form-container input[type="date"] {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-container button {
+            padding: 8px 16px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #1c6391;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>List of Teachers</h1>
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <a href="/TeacherPage/New">Add New Teacher</a>
+    </div>
+
+    <!-- Search Form for Hire Date -->
+    <div class="form-container">
+        <label for="startDate">Search by teacher by their Hire Date:</label>
+        <input type="date" id="startDate" name="startDate" />
+        <input type="date" id="endDate" name="endDate" />
+        <button onclick="filterTeachers()">Search</button>
+    </div>
+
+    <!-- Teachers Table -->
+    <table class="teacher-table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Hire Date</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Cumulative.Models.Teacher teacher in Model)
+            {
+                <tr class="teacher-item" data-hiredate="@teacher.HireDate.ToString("yyyy-MM-dd")">
+                    <td>@teacher.TeacherFName</td>
+                    <td>@teacher.TeacherLName</td>
+                    <td>@teacher.HireDate.ToString("yyyy/MM/dd")</td>
+                    <td><a class="teacher-link" href="/TeacherPage/Show/@teacher.TeacherId">View Details</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <script>
+        function filterTeachers() {
+            // Get the selected dates
+            var startDate = document.getElementById("startDate").value;
+            var endDate = document.getElementById("endDate").value;
+
+            // Get all teacher rows
+            var teacherRows = document.querySelectorAll(".teacher-item");
+
+            // Loop through all teacher rows
+            teacherRows.forEach(function(row) {
+                var hireDate = row.getAttribute("data-hiredate");
+
+                // If startDate is selected, hide rows before that date
+                if (startDate && new Date(hireDate) < new Date(startDate)) {
+                    row.style.display = "none";
+                }
+                // If endDate is selected, hide rows after that date
+                else if (endDate && new Date(hireDate) > new Date(endDate)) {
+                    row.style.display = "none";
+                }
+                // If no filter, show all
+                else {
+                    row.style.display = "";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
